@@ -1,9 +1,4 @@
 /* style.css */
-body {
-  font-family: Overpass;
-  color: black;
-  font-size: 18px;
-}
 
 h1 {
   font-family: 'Anton', sans-serif;
@@ -59,15 +54,16 @@ p {
 
 a {
   font-family:'Anton', sans sans-serif;
-  color:rgb(0, 38, 255),
+  color:rgb(0, 38, 255);
   font-weight: bold;
   text-decoration: none;
   transition: .3s;
 }
 
 .container{
-  width: 900px;
-  margin: 0px;
+  align-content: center;
+  justify-content: center;
+
 }
 
 .banner{
@@ -108,16 +104,7 @@ a {
   width: 200px;
   text-align: center;
   padding: 25px;
-  margin: 10px;
-  align-content: center;
-  justify-content: space-around;
 }
-
-.card-white p{
-  display: inline-block;
-  margin: 10px;
-  padding: 0px 0px;
-  }
 
 .card-white img {
   width: 180px;
@@ -133,16 +120,62 @@ a {
 }
 
 .cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 16px;
-  align-content: center;
-  align-items: start;
+
+  justify-content: center;
 }
 
 .footer h5 {
   color: white;
 }
-a:hover {
-  color: #CE2FAE;
-}/* Write some CSS below */
+/* Write some CSS below */
+
+#menu {
+ display: flex;
+ padding-top:5px;
+ padding-bottom: 5px;
+ justify content: space-ground;
+ background-color: black;
+}
+
+#menu li {
+  list-style-type: none;
+}
+
+.bouton {
+
+display : inline-block;
+min-width: 160px;
+margin: 0,5rem;
+padding:  5px 5px;
+text-align: center;
+}
+
+@media (max-width: 800px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .card-white {
+    width: 400px;
+    justify-content: center;
+  }
+  
+/* Container media queries */
+@media (min-width: 500px) {
+  .container {
+    width: 400px;
+  }
+
+
+@media (min-width: 800px) {
+  .container {
+    width: 600px;
+  }
+
+@media (min-width: 1000px) {
+  .container {
+    width: 800px;
+  }
