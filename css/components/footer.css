@@ -1,0 +1,28 @@
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.list-inline li {
+  display: inline;
+  padding: 10px;
+}
+.list-inline i {
+  font-size: 50px;
+  color: rgb(230, 230, 230);
+}
+.list-inline i:hover {
+  color: hotpink;
+}
+
+.footer {
+  background-color: black;
+  height: 150px;
+}
+
+.footer p {
+  text-align: center;
+  color: white;
+}

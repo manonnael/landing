@@ -1,0 +1,28 @@
+.banner {
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  padding: 50px;
+}
+
+.banner .container p {
+  color: white;
+  margin-bottom: 50px;
+}
+
+.container h1 {
+  font-size: 50px;
+  color: white;
+  margin-top: 100px;
+  margin-bottom: 15px;
+}
+
+.container h2 {
+  text-align: center;
+}
+
+.container {
+  margin-left: 100px;
+  margin-right: 100px;
+}
